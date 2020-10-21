@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>
+            Calcola il prezzo del tuo biglietto
+        </h1>
+
+<!-- DATI UTENTE -->
+
+        <section class="dati-input">
+            <div class="row">
+                <div class="col">
+                    <label for="nome">
+                        Nome e Cognome
+                    </label>
+                    <input type="text" 
+                    id="nome"
+                    name="nome"
+                    placeholder="inserisci il tuo nome">
+                </div>
+            </div>
+            <div class="col">
+                <label for="km">
+                    Km da percorrere
+                </label>
+                <input type="text" 
+                id="km"
+                name="km"
+                placeholder="inserisci km da percorrere">
+            </div>
+            <div class="fascia-eta">
+                <label for="fascia-eta">
+                    fascia eta
+                </label>
+                <select name="fascia-eta"
+                        id="fascia-eta">
+                        <option value="minorenne">
+                            Minorenne
+                        </option>
+                        <option value="maggiorenne">
+                            Maggiorenne
+                        </option>
+                        <option value="over 65">
+                            over 65
+                        </option>
+                </select>
+            </div> 
+            <!-- BOTTONI -->
+            <button id="genera" class="btn">
+                genera
+            </button>
+            <button id="annulla" class="btn">
+                annulla
+            </button>
+
+        </section>
+<!--  BIGLIETTO GENERATO -->
+        <section id="biglietto" class="hidden">
+            <h2 class="title">
+                Il tuo biglietto
+            </h2>
+            <div class="contenuti">
+                <div class="nome">
+                    <h3>
+                        Nome Passeggero :
+                        <span id="nome-passeggero">
+                        </span>
+                    </h3>
+                </div>
+            </div>
+            <div class="offerta">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Offerta
+                            </th>
+                            <th>
+                                Carrozza
+                            </th>
+                            <th>
+                                Codice CP
+                            </th>
+                            <th>
+                                Costo
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span id="offerta-applicata">
+
+                                </span>
+                            </td>
+                            <td>
+                                <span id="carrozza">
+
+                                </span>
+                            </td>
+                            <td>
+                                <span id="codice-cp">
+
+                                </span>
+                            </td>
+                            <td>
+                                <span id="costo">
+
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- FORM -->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
