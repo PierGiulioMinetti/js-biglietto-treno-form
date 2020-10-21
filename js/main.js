@@ -36,6 +36,7 @@ btnGenera.addEventListener('click', function() {
     } else if ( fasciaEta == 'over 65') {
         costoBiglietto -= costoBiglietto * 0.4;
         offerta = 'Offerta Over 65';
+    }
 
 
         costoBiglietto = costoBiglietto.toFixed(2) + "€" 
@@ -48,6 +49,6 @@ btnGenera.addEventListener('click', function() {
        document.getElementById('offerta-applicata').innerHTML = offerta;
        document.getElementById('carrozza').innerHTML = numeroCarrozza;
        document.getElementById('codice-cp').innerHTML = numeroCp;
-       
+       document.getElementById('costo').innerHTML = costoBiglietto;
 });
 
