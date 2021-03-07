@@ -1,5 +1,5 @@
 /*
-Come visto insieme durante la lezione in classe creiamo un finto biglietto del treno con:
+Creiamo un finto biglietto del treno con:
 Nome passeggero
 Fascia eta selezionata dall'utente
 Codice treno CP (numero casuale tra 90000 e 100000 escluso)
